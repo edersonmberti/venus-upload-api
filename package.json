@@ -1,16 +1,16 @@
 {
   "name": "venus-upload-api",
   "version": "1.0.0",
-  "description": " RESTful API built with Express to upload images.",
+  "description": "This is a RESTful API built with NodeJS + Express + AWS S3 to upload files use on Venus application.",
   "author": "Ederson Machado <edersonmberti@gmail.com> (https://www.linkedin.com/in/ederson-machado-b973a0125/)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edersonmberti/upload-here-api.git"
+    "url": "git+https://github.com/edersonmberti/venus-upload-api.git"
   },
   "bugs": {
-    "url": "https://github.com/edersonmberti/upload-here-api/issues"
+    "url": "https://github.com/edersonmberti/venus-upload-api/issues"
   },
-  "homepage": "https://github.com/edersonmberti/upload-here-api#readme",
+  "homepage": "https://github.com/edersonmberti/venus-upload-api#readme",
   "keywords": [
     "js",
     "aws-s3",

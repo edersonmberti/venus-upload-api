@@ -1,0 +1,43 @@
+{
+  "name": "venus-upload-api",
+  "version": "1.0.0",
+  "description": " RESTful API built with Express to upload images.",
+  "author": "Ederson Machado <edersonmberti@gmail.com> (https://www.linkedin.com/in/ederson-machado-b973a0125/)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edersonmberti/upload-here-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edersonmberti/upload-here-api/issues"
+  },
+  "homepage": "https://github.com/edersonmberti/upload-here-api#readme",
+  "keywords": [
+    "js",
+    "aws-s3",
+    "aws s3",
+    "s3",
+    "multer",
+    "multer-s3",
+    "express",
+    "node",
+    "upload"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.614.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

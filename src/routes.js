@@ -6,12 +6,14 @@ const fs = require("fs");
 const path = require("path");
 const { promisify } = require("util");
 
+const auth = require("./auth");
+
 const s3 = new aws.S3();
 
 const uploadConfig = require("./upload");
 const upload = multer(uploadConfig);
 
-routes.post("/", upload.single("image"), (req, res) => {
+routes.post("/", auth, upload.single("image"), (req, res) => {
   try {
     if (!req.file) throw "Image not found";
 
@@ -25,7 +27,7 @@ routes.post("/", upload.single("image"), (req, res) => {
   }
 });
 
-routes.delete("/:key", (req, res) => {
+routes.delete("/:key", auth, (req, res) => {
   const { key } = req.params;
 
   try {
